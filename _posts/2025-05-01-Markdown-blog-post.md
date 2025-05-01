@@ -1,0 +1,75 @@
+---
+layout: post
+title: Markdown 문법 기초
+date: 2025-05-01 
+tags: [ Jekyll, "웹개발" ]
+---
+
+Text acn be **bold** or _italic*
+
+[Link to another page.](https://lahc.snu.ac.kr/)
+
+There should be whitespace between paragraphs.
+
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+
+# Header 1
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+## Header 2
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+### Header 3
+* This is an unordered list following a header.
+* This is an unordered list following a header.
+* This is an unordered list following a header.
+
+#### Header 4
+1. This is an ordered list following a header.
+2. This is an ordered list following a header
+3. This is an ordered list following a header.
+
+##### Header 5
+[**head1**]	[**head two**]	[**three**]
+[ok]	[good swedish fish]	[nice]
+[out of stock]	[good and plenty]	[nice]
+[ok]	[good oreos]	[hmm]
+[ok]	[good zoute drop]	[yumm]
+
+
+### Here is an unordered list:
+* Item foo
+* Item bar
+* Item baz
+* Item zip
+
+### And an ordered list:
+1. Item one
+2. Item two
+3. Item three
+4. Item four
+
+### And a nested list:
+* level 1 item
+ * level 2 item
+ * level 2 item
+  * level 3 item
+  * level 3 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+  * level 2 item
+* level 1 item
+ * level 2 item
+ * level 2 item
+* level 1 item
+ 
+### There’s a horizontal rule below this.
+
+### Image
+![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Stinkende_gouwe_bloem_en_vrucht_Chelidonium_majus.jpg/571px-Stinkende_gouwe_bloem_en_vrucht_Chelidonium_majus.jpg?20050606182704)
+
+

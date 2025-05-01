@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>서울대학교</a>. 공과대학 건축학과. 역사도시건축연구실.
 
 profile:
   align: right

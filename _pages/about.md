@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>서울대학교</a>. 공과대학 건축학과. 역사도시건축연구실.
+subtitle: <a href='#'>서울대학교</a>. <a href='#'>공과대학 건축학과</a>. <a href='#'>역사도시건축연구실</a>.
 
 profile:
   align: right

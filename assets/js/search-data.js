@@ -80,7 +80,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/markdown/";
+            window.location.href = "/blog/2025/Markdown-blog-post/";
           
         },
       },{id: "post-나의-첫-jekyll-블로그-포스트",

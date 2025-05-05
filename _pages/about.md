@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.snu.ac.kr/'>서울대학교</a> | <a href='https://eng.snu.ac.kr/snu/main/main.do'>공과대학 건축학과</a> | <a href='https://lahc.snu.ac.kr/'>역사도시건축연구실</a>.
+subtitle: <a href='https://www.snu.ac.kr/'>서울대학교</a> | <a href='https://eng.snu.ac.kr/snu/main/main.do'>공과대학 건축학과</a> | <a href='https://lahc.snu.ac.kr/'>역사도시건축연구실</a>
 
 profile:
   align: right

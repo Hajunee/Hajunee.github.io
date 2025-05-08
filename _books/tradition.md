@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: 만들어진 전통
+title: The Invention of Tradition
 author: Eric Hobsbawm
 cover: assets/img/book_covers/tradion.jpg
 olid: OL43499941M # use Open Library ID to fetch cover (if no `cover` is provided)

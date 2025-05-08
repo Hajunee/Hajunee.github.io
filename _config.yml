@@ -89,7 +89,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: 이하준의 사이트트 # blog_name will be displayed in your blog page
-blog_description: [[인문데이터과학] 실습용]
+blog_description: [인문데이터과학 실습용]
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

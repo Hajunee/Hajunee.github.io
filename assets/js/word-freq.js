@@ -29,7 +29,6 @@ function getChartData(text) {
             {
                 label: "Frequency",
                 data: Object.values(freq_sorted),
-                backgroundColor: 'rgba(75, 192, 192, 0.5)',
             }
         ]
     };

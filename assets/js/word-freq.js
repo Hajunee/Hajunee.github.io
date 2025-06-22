@@ -1,60 +1,59 @@
-let chart;
+let text = "";
 
+// 불용어 목록
 const stopwords = [
-    "the", "and", "to", "in", "of", "a", "for", "with", "on", "this", "that", "it", "its",
-    "from", "by" 
+    "the", "and", "to", "in", "of", "a", "for", "with",
+    "on", "this", "that", "it", "which", "an", "from",
+    "they", "by", "its", "is", "as"
 ];
 
-function getChartData(text) {
-    const words = text.toLowerCase().match(/[a-z가-힣]+/g) || [];
+const ctx = document.getElementById('myChart').getContext('2d');
 
+const chart = new Chart(ctx, {
+    "type": "bar",
+    "data": {},
+    "options": {
+        "responsive": true
+    }
+})
+
+function updateChart() {
+    text = document.getElementById("textInput").value;
+    chart.data = getChartData(text);
+    chart.update();
+}
+
+function getChartData(text, topn=30) {
+    // 단어 배열 만들기
+    const words = text.toLowerCase().match(/[a-z가-힣]+/g) || [];
+    
+    // 카운터 객체 만들기 {단어: 빈도}
     const frequency = {};
 
     words.forEach(word => {
-        if (!stopwords.includes(word)) {
-            frequency[word] = (frequency[word] || 0) + 1;
-        }
-    });
+        frequency[word] = (frequency[word] || 0) + 1;
+    })
+    
+    // 불용어 제거
+    for (stop of stopwords) {
+        frequency[stop] = 0;
+    }
 
-    // 상위 30개 단어만 정렬하여 추출
-    const sorted = Object.entries(frequency)
-        .sort(([, a], [, b]) => b - a)
-        .slice(0, 30);
+    // 빈도 내림차순으로 정렬하기
+    const sorted = Object.entries(frequency).sort(([,a],[,b]) => b - a);
+    // 상위 30개만 저장하기
+    const freq_sorted = Object.fromEntries(sorted.slice(0, topn));
 
-    const freq_sorted = Object.fromEntries(sorted);
-
-    return {
-        labels: Object.keys(freq_sorted),
-        datasets: [
+    // 차트용 데이터 만들기
+    const chartData = {
+        "labels": Object.keys(freq_sorted),
+        "datasets": [
             {
-                label: "Frequency",
-                data: Object.values(freq_sorted),
+                "label": "Frequency",
+                "data": Object.values(freq_sorted)
             }
         ]
     };
-}
 
-function updateChart() {
-    const text = document.getElementById("textInput").value;
-    const data = getChartData(text);
-
-    if (chart) {
-        chart.data.labels = data.labels;
-        chart.data.datasets[0].data = data.datasets[0].data;
-        chart.update();
-    } else {
-        const ctx = document.getElementById('myChart').getContext('2d');
-        chart = new Chart(ctx, {
-            type: 'bar',
-            data: data,
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    }
+    return chartData;
 }

@@ -37,21 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/word-freq/";
           },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
-              },
-            },{id: "post-markdown-문법-기초",
+        },{id: "post-markdown-문법-기초",
         
           title: "Markdown 문법 기초",
         
